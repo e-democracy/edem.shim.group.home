@@ -1,0 +1,25 @@
+<div id="gs-skin-ogn-edem-about">
+  <p tal:replace="structure view/aboutText">This is the about tab.</p>
+  <div class="share-bar"
+           tal:attributes="href request/URL; title string:Join Us - ${view/groupInfo/name}"
+           public="1">
+         &#160;
+  </div><!--share-bar-->
+  <div class="follow-bar" tal:condition="python:1 or view.twitterId or view.facebookId">
+    <tal:block tal:condition="view/twitterId">
+      <a tal:attributes="href string:http://twitter.com/${view/twitterId}"><img src="//forums.e-democracy.org/groups/files/files/f/3162-2012-02-27T215520Z/twitterforum.png" title="Follow us on twitter"/></a>
+    </tal:block>
+    <tal:block tal:condition="view/facebookId">
+      <a tal:attributes="href string:http://facebook.com/${view/facebookId}"><img src="//forums.e-democracy.org/groups/files/files/f/3163-2012-02-27T215522Z/facebookforum.jpg"/></a>
+    </tal:block>
+  </div>
+  <div tal:condition="view/isGroupAdmin | view/isSiteAdmin" 
+    class="ui-state-highlight ui-corner-all" style="clear: both;">
+    <p style="margin:1.385em;">
+      <span style="float: left; margin-right: 0.0.69em;" 
+        class="ui-icon ui-icon-info"></span>
+      As a group administrator you can
+      <a href="changeabout.html"><strong>change</strong> this About Tab.</a>
+    </p>
+  </div>
+</div>
