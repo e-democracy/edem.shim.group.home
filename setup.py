@@ -34,7 +34,7 @@ setup(name='edem.shim.group.home',
     install_requires=[
         'setuptools',
         'gs.skin.ogn.edem',
-        'gs.group.member',
+        'gs.group.member.viewlet',
         'gs.shim.group.home',
         # -*- Extra requirements: -*-
     ],
