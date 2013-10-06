@@ -11,5 +11,14 @@
     weight="1" 
     title="Members" 
     layer="gs.skin.ogn.edem.interfaces.IEDemLayer" />
+
+  <browser:viewlet name="gs-group-home-stats" 
+    manager="gs.shim.group.home.interfaces.IGroupHomepageInfo" 
+    class="gs.group.home.simpletab.SimpleTab" 
+    template="browser/templates/stats.pt" 
+    permission="zope2.View" 
+    weight="2" 
+    title="Stats" 
+    layer="gs.skin.ogn.edem.interfaces.IEDemLayer" />
 </configure>
 
