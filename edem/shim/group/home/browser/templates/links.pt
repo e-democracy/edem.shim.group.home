@@ -1,0 +1,22 @@
+<tal:block tal:define="hotTopics view/hotTopics;
+                       relatedGroups view/relatedGroups;
+                       relatedLinks view/relatedLinks">
+	<div class="xhtml2-nl" tal:condition="hotTopics">
+	<p class="label">HOT Topics (local)</p>
+	<ul>
+		<li tal:repeat="link hotTopics" tal:content="structure link">Another
+		link!</li>
+	</ul>
+	</div>
+	<div class="xhtml2-nl" tal:condition="relatedGroups">
+	<p class="label">Related Forums</p>
+	<ul>
+		<li tal:repeat="link relatedGroups" tal:content="structure link">Another
+		link!</li>
+	</ul>
+	</div>
+	<div class="xhtml2-nl" tal:condition="relatedLinks">
+	<p class="label">Related Links</p>
+	<span tal:content="structure relatedLinks">Related Links</span>
+	</div>
+</tal:block>

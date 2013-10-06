@@ -20,5 +20,14 @@
     weight="2" 
     title="Stats" 
     layer="gs.skin.ogn.edem.interfaces.IEDemLayer" />
+
+  <browser:viewlet name="gs-group-home-links" 
+    manager="gs.shim.group.home.interfaces.IGroupHomepageInfo" 
+    template="browser/templates/links.pt" 
+    class=".linkstab.LinksTab" 
+    permission="zope2.View" 
+    weight="6" 
+    title="Links" 
+    layer="gs.skin.ogn.edem.interfaces.IEDemLayer" />
 </configure>
 
