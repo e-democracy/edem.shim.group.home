@@ -5,7 +5,7 @@
 
   <browser:viewlet name="gs-group-home-members" 
     manager="gs.shim.group.home.interfaces.IGroupHomepageInfo" 
-    template="templates/members.pt" 
+    template="browser/templates/members.pt" 
     class="gs.group.home.simpletab.PublicTab" 
     permission="zope2.View" 
     weight="1" 
